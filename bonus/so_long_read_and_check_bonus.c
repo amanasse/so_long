@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long_read_and_check.c                           :+:      :+:    :+:   */
+/*   so_long_read_and_check_bonus.c                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amanasse <amanasse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 14:45:55 by amanasse          #+#    #+#             */
-/*   Updated: 2022/08/30 17:30:14 by amanasse         ###   ########.fr       */
+/*   Updated: 2022/08/31 17:12:41 by amanasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 int	counter_map_ok(t_long *d)
 {

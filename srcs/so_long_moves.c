@@ -6,11 +6,11 @@
 /*   By: amanasse <amanasse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 18:43:04 by amanasse          #+#    #+#             */
-/*   Updated: 2022/08/30 16:58:07 by amanasse         ###   ########.fr       */
+/*   Updated: 2022/08/30 17:45:50 by amanasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 void	key_s(t_long *d)
 {

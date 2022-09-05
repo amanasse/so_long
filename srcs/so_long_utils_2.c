@@ -6,11 +6,11 @@
 /*   By: amanasse <amanasse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 11:40:05 by amanasse          #+#    #+#             */
-/*   Updated: 2022/08/30 15:48:03 by amanasse         ###   ########.fr       */
+/*   Updated: 2022/08/30 17:44:51 by amanasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 int	destroy_mlx(t_long	*d)
 {

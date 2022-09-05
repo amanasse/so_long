@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long_check_errors.c                             :+:      :+:    :+:   */
+/*   so_long_check_errors_bonus.c                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amanasse <amanasse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 14:15:20 by amanasse          #+#    #+#             */
-/*   Updated: 2022/08/30 15:47:56 by amanasse         ###   ########.fr       */
+/*   Updated: 2022/08/31 17:12:27 by amanasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 int	check_argv(char *str)
 {

@@ -6,11 +6,11 @@
 /*   By: amanasse <amanasse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 11:53:59 by amanasse          #+#    #+#             */
-/*   Updated: 2022/08/30 16:59:55 by amanasse         ###   ########.fr       */
+/*   Updated: 2022/08/31 13:59:29 by amanasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 void	ft_init_images(t_long *d)
 {
@@ -26,7 +26,7 @@ void	ft_init_images(t_long *d)
 			&d->l, &d->h);
 	if (!d->herbe || !d->porte || !d->nanas || !d->eau || !d->p)
 	{
-		write(2, "Error\nProb with img\n", 22);
+		write(2, "Error\nProb with img\n", 20);
 		destroy_mlx(d);
 	}
 }
@@ -60,8 +60,8 @@ void	ft_init_struct(t_long *d)
 		if (d->win_ptr)
 			ft_init_images(d);
 		else
-			exit(0);
+			destroy_mlx(d);
 	}
 	else
-		exit(0);
+		destroy_mlx(d);
 }

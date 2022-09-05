@@ -6,11 +6,11 @@
 /*   By: amanasse <amanasse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 14:54:26 by amanasse          #+#    #+#             */
-/*   Updated: 2022/08/30 15:48:01 by amanasse         ###   ########.fr       */
+/*   Updated: 2022/08/30 17:44:55 by amanasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 void	pars_p(t_long *d)
 {

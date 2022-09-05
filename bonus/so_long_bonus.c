@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.c                                          :+:      :+:    :+:   */
+/*   so_long_bonus.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amanasse <amanasse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 12:12:35 by amanasse          #+#    #+#             */
-/*   Updated: 2022/08/30 15:48:05 by amanasse         ###   ########.fr       */
+/*   Updated: 2022/08/31 17:12:34 by amanasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 int	main(int argc, char **argv)
 {
@@ -29,11 +29,12 @@ int	main(int argc, char **argv)
 			return (0);
 		ft_init_struct(&d);
 		my_pars(&d);
+		mlx_put_image_to_window(d.mlx_ptr, d.win_ptr, d.b, 0, 0);
 		mlx_key_hook(d.win_ptr, deal_key, &d);
 		mlx_hook(d.win_ptr, 33, 1L << 17, destroy_mlx, &d);
 		mlx_loop(d.mlx_ptr);
 	}
 	else
-		write (2, "Error\nError of Arguments\n", 27);
+		write (2, "Error\nError of Arguments\n", 25);
 	return (0);
 }

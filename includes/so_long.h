@@ -6,7 +6,7 @@
 /*   By: amanasse <amanasse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 12:06:58 by amanasse          #+#    #+#             */
-/*   Updated: 2022/08/30 16:41:03 by amanasse         ###   ########.fr       */
+/*   Updated: 2022/09/01 13:58:07 by amanasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@
 # include <unistd.h>
 # include <signal.h>
 # include <limits.h>
-# include "minilibx-linux/mlx.h"
-# include "gnl/get_next_line.h"
-# include "ft_printf/ft_printf.h"
+# include "../minilibx-linux/mlx.h"
+# include "../gnl/get_next_line.h"
+# include "../ft_printf/ft_printf.h"
 
 # define KEY_W 119
 # define KEY_A 97
@@ -37,14 +37,18 @@ typedef struct s_long
 {
 	char	*tab[BUFFER];
 	char	*line;
+	char	*str_itoa;
 	void	*mlx_ptr;
 	void	*win_ptr;
 	void	*p;
+	void	*p_dos;
+	void	*p_droite;
+	void	*p_gauche;
 	void	*herbe;
 	void	*eau;
 	void	*nanas;
 	void	*porte;
-	void	*m;
+	void	*b;
 	int		fichier;
 	int		i;
 	int		j;
@@ -71,6 +75,7 @@ int		check_argv(char *str);
 void	ft_init_struct_count(t_long *d);
 void	ft_init_struct(t_long *d);
 void	ft_init_images(t_long *d);
+void	check_mlx(t_long *d);
 void	ft_memset_so_long(void *s, int c, size_t n);
 void	print_map(t_long *d);
 
@@ -90,6 +95,7 @@ int		check_other_char_in_map(t_long *d);
 void	free_tab(t_long *d);
 int		ft_strlen_so_long(char *str);
 int		destroy_mlx(t_long *d);
+void	destroy_img(t_long *d);
 
 // Parsing :
 void	my_pars(t_long *d);
@@ -98,7 +104,9 @@ void	pars_for_line(t_long *d);
 
 // moves :
 int		deal_key(int key_code, t_long *d);
+int		afficher_le_compteur(int key_code, t_long *d);
 void	key_w(t_long *d);
 void	key_d(t_long *d);
+char	*ft_itoa(int n);
 
 #endif
